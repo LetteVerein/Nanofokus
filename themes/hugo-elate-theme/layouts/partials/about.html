@@ -1,0 +1,43 @@
+	<section id="about" data-section="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">{{ with .Site.Params.about.title }}{{ . | markdownify }}{{ end }}</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+							<h3>{{ with .Site.Params.about.description }}{{ . | markdownify }}{{ end }}</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8">
+					<p>{{ with .Site.Params.about.text }}{{ . | markdownify }}{{ end }}</p>
+				</div>
+				<div class="col-md-4 text-center">
+					<h3>Partner & Unterstützt von:</h3>
+					<img src="images/partner/clara_von_simson_gesellschaft-logo.png" class="img-responsive">
+					<hr>
+					<img src="images/partner/dpf-logo.png" class="img-responsive">
+					<hr>
+					<img src="images/partner/lette_verein-logo.png" class="img-responsive">
+				</div>
+
+			<!--{{ range .Site.Params.about.item }}
+				<div class="col-md-4">
+					<div class="person text-center to-animate">
+						<figure><img src="images/{{ .img }}" alt="{{ .alt }}"></figure>
+						<h3>{{ .name | markdownify }}</h3>
+						<span class="position">{{ .position | markdownify }}</span>
+						<p>{{ .description | markdownify }}</p>
+						<ul class="social social-circle">
+						{{ range .social }}
+							<li><a href="{{ index . 1 }}"><i class="{{ index .  0 }}"></i></a></li>
+						{{ end }}
+						</ul>
+					</div>
+				</div>
+			{{ end }}-->
+			</div>
+		</div>
+	</section>

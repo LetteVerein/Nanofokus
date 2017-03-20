@@ -1,0 +1,241 @@
+# Page settings
+languageCode = "de-de"
+title = "Nanofokus"
+theme = "hugo-elate-theme"
+
+[params]
+  # custom_css = ["css/custom1.css", "css/custom2.css"]
+  # Meta
+  author = ""
+  description = ""
+  email = ""
+  # Navigation
+  [params.navigation]
+    brand = "Nanofokus"
+    home = "Home"
+    about = "Über uns"
+    services = "Services"
+    work = "Produkte"
+    #testimonials = "Testimonials"
+    contact = "Kontakt"
+
+    # You can add custom links before or after the default links
+    # Assign a weight to define the order
+    
+    # prepended links
+    #[[menu.prepend]]
+    #  url = "http://gohugo.io"
+    #  name = "Hugo"
+    #  weight = 10
+
+    # postpended links
+    #[[menu.postpend]]
+    #  url = "http://gohugo.io"
+    #  name = "External link"
+    #  weight = 10
+  
+
+
+  
+  # Hero section
+  [params.hero]
+    title = "Nanofokus"
+    subtitle = 'Tolle Headline über Nanofokus, ein bis zwei zeilen.'
+ 
+
+
+  # Intro section
+  [params.intro]
+  [[params.intro.item]]
+    title = "Von der Idee"
+    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    url = "#"
+    #button = "Get In Touch"
+    icon = "fa fa-lightbulb-o"
+    img = "bg/1.jpg"
+  [[params.intro.item]]
+    title = "über die Produktion"
+    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    url = "#"
+    #button = "Click Me"
+    icon = "fa fa-wrench"
+    img = "bg/3.jpg"
+  [[params.intro.item]]
+    title = "bis zum Verkauf"
+    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    url = "#"
+    #button = "Why us?"
+    icon = "fa fa-shopping-basket"
+    img = "bg/2.jpg"
+
+  # Work section
+  [params.work]
+    enable = true
+    title = "Unsere Produkte"
+    description = "Toller Produkte Text, ToDo: Stimmen die Produkt zuordnungen?"
+    footertext = "Unsere Preisliste."
+    [[params.work.row]]
+      img = "productes/1.jpg"
+      alt = "Seidenschal"
+      title = "Seidenschal - Crepe de Chine Seide"
+      subtitle = "handgenäht - 39,50€"
+    [[params.work.row]]
+      img = "productes/2.jpg"
+      alt = "Einstecktuch"
+      title = "Einstecktuch - Crepe de Chine Seide"
+      subtitle = "handgenäht - 10,00€"
+    [[params.work.row]]
+      img = "productes/3.jpg"
+      alt = "Postkarten"
+      title = "Postkarten"
+      subtitle = "0,60€"
+    [[params.work.row]]
+      img = "productes/buttons/4.jpg"
+      alt = "Buttons"
+      title = "Buttons (Handarbeit)"
+      subtitle = "1,20€"
+    [[params.work.row]]
+      img = "productes/4.jpg"
+      img2 = "productes/15.jpg"
+      alt = "Krawatte"
+      title = "Krawatte - Crepe de Chine Seide"
+      subtitle = "handgenäht - 35,00€"
+    [[params.work.row]]
+      img = "productes/cards/1.jpg"
+      img2 = "productes/cards/2.jpg"
+      img3 = "productes/cards/3.jpg"
+      img4 = "productes/cards/5.jpg"
+      img5 = "productes/cards/5.jpg"
+      img6 = "productes/cards/6.jpg"
+      alt = "Klappkarten"
+      title = "Klappkarten mit Einleger und Umschlag"
+      subtitle = "1,80€"
+
+
+
+  # Testimonials section
+  [params.testimonials]
+    enable = false
+    title = "Testimonials"
+    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    [[params.testimonials.item]]
+      quote = "&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;"
+      person = 'Jean Doe, CEO <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>'
+      img = "person1.jpg"
+      alt = "Person1"
+    [[params.testimonials.item]]
+      quote = "&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.&rdquo;"
+      person = 'John Doe, Senior UI <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>'
+      img = "person2.jpg"
+      alt = "Person2"
+    [[params.testimonials.item]]
+      quote = "&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. &rdquo;"
+      person = 'Chris Nash, Director <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>'
+      img = "person3.jpg"
+      alt = "Person3"
+
+
+
+  # Services section
+  [params.services]
+    enable = false
+    title = "Services"
+    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    [[params.services.item]]
+      title = "Brand &amp; Strategy"
+      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+      icon = "icon-anchor"
+    [[params.services.item]]
+      title = "Web &amp; Interface"
+      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+      icon = "icon-layers2"
+    [[params.services.item]]
+      title = "Photo &amp; Video"
+      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+      icon = "icon-video2"
+      [[params.services.item]]
+      title = "CMS &amp; eCommerce"
+      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"      
+      icon = "icon-monitor"
+
+
+
+  # About section
+  [params.about]
+    enable = true
+    title = "Über uns"
+    description =  "Eine Schülergenossenschaft feiert 5-jähriges Jubiläum!"
+    text = "Einst mit dem Ziel den Sozialkundeunterricht praxisnaher zu gestalten, gründete der Lette Verein am 31.10.2011 die Schülerfirma Nanofokus.<br>Sie wird von dem Förderverein Clara-von-Simson-Gesellschaft e.V. unterstützt.<br>Engagierten Schülern aus den Bereichen Chemie-Biologie, Metallografie, Grafikdesign, Modedesign, Medieninformatik sowie Ernährungs- und Versorgungsmanagement wird mit diesem realen Langzeitprojekt ein Einblick in die Grundprinzipien wirtschaftlichen Handelns geschaffen. Das Modell Schülergenossenschaft wurde am 28.02.2014 sogar in das Quasiregister (Schülergenossenschaftsregister) des Verbandes BBU Berlin-Brandenburgischer Wohnungsunternehmen eingetragen.<br><br>Dabei betreut die Partnergenossenschaft WBG DPF eG das junge Unternehmen.<br>Herzstück sind die technischen Fotografien, die in den Ausbildungen entstanden: Sie werden in Textilien, wie hochwertiger Seide, eingefärbt oder auf Karten gedruckt. So entwickelte man bereits handbemalte Turnbeutel (alles Unikate!), modische Schals und Loops, Krawatten und Fliegen sowie Schlüsselbänder.<br>Die beliebten Klappkarten und Buttons zeigen beispielsweise das unter einem Rasterelektronenmikroskop entstandene Motiv von Bronze mit Schraffur Ätzung.<br>Mit Beginn des neuen Schuljahres verzeichnet Nanofokus ein Zuwachs an neuen Mitgliedern, welche je nach Interesse und Begabungen in den unterschiedlichsten Bereichen mitwirken: Ob kreative Projektentwicklung, anspruchsvolle Produktion, als Verkaufstalent am Infostand oder Überwachungstätigkeit im Vorstand bzw. Aufsichtsrat – für jeden ist etwas dabei.<br>Denn „Lette ist für mich“! Mach mit und melde dich gleich bei uns an!"
+    #[[params.about.item]]
+    #  name = "Jean Smith"
+    #  position = "Web Designer"
+    #  description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts"
+    #  img = "person1.jpg"
+    #  alt = "Person1"
+    #  social = [
+    #    ["icon-twitter", "#"],
+    #    ["icon-facebook", "#"],
+    #    ["icon-linkedin", "#"]
+    #  ]
+
+
+
+  # Counters section
+  [params.counters]
+    enable = false
+    title = "Stats"
+    background = "full_image_1.jpg"
+    [[params.counters.item]]
+      description = "Finished projects"
+      icon = "icon-briefcase"
+      from = 0
+      to = 89
+      interval = 50
+      speed = 5000
+    [[params.counters.item]]
+      description = "Lines of code"
+      icon = "icon-code"
+      from = 0
+      to = 2343409
+      interval = 50
+      speed = 5000
+    [[params.counters.item]]
+      description = "Cups of coffee"
+      icon = "icon-cup"
+      from = 0
+      to = 1302
+      interval = 50
+      speed = 5000
+    [[params.counters.item]]
+      description = "Happy clients"
+      icon = "icon-people"
+      from = 0
+      to = 52
+      interval = 50
+      speed = 5000
+
+
+
+  # Contact section
+  [params.contact]
+    enable = true
+    map = false
+    title = "Kontaktiere uns"
+    description = "Hast du eine Frage oder möchtest du uns etwas mitteilen? Dann nutze das Kontaktformular."
+    details = [
+        ["fa fa-home", "Schülergenossenschaft des Lette-Vereins Berlin <br> Viktoria-Luise-Platz 6 <br> D-10777 Berlin"],
+        ["fa fa-user", "Ansprechpartnerin: Frau Herrmann"],
+        #["fa fa-phone", "(030) 21994-0"],
+        #["fa fa-envelope", "nanofokus@lette-verein.de"],
+        ["fa fa-globe", '<a href="http://www.letteverein.berlin/" target="_blank">LetteVerein.berlin</a>']
+      ]
+    name = "Dein Name"
+    email = "E-Mail"
+    phone = "Telefon"
+    message = "Nachricht"
+    button = "Absenden"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = '<a href="http://www.letteverein.berlin/impressum/" target="_blank">Impressum</a> | <a href="http://www.letteverein.berlin/" target="_blank">Lette-Verein Berlin</a> <br> Copyright &copy; 2016 - <script type="text/javascript">document.write(new Date().getFullYear());</script> Nanofokus - Schülergenossenschaft des <a href="http://www.letteverein.berlin/" target="_blank">Lette-Verein Berlin</a>.<!-- <br> Diese Website ist <a href="https://github.com/LetteVerein/Nanofokus" target="_blank">OpenSource</a>, gebaut mit <a href="https://gohugo.io/" target="_blank">Hugo</a> von <a href="https://github.com/LeoWinterDE" target="_blank">Leo Winter</a>.-->'
