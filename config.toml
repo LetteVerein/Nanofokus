@@ -1,14 +1,17 @@
 # Page settings
-languageCode = "de-de"
+DefaultContentLanguage = "de"
+copyright = "(c) 2016-2017 Leo Winter @LetteVerein"
 title = "Nanofokus"
 theme = "hugo-elate-theme"
+baseURL = "https://letteverein.github.io/Nanofokus/"
 
 [params]
   # custom_css = ["css/custom1.css", "css/custom2.css"]
   # Meta
-  author = ""
-  description = ""
-  email = ""
+  description = "Nanofokus @LetteVerein"
+  keywords = ""
+  author = "Nanofokus @LetteVerein"
+  email = "nanofokus@lette-verein.de"
   # Navigation
   [params.navigation]
     brand = "Nanofokus"
@@ -34,15 +37,13 @@ theme = "hugo-elate-theme"
     #  name = "External link"
     #  weight = 10
   
-
-
   
   # Hero section
   [params.hero]
     title = "Nanofokus"
-    subtitle = 'Tolle Headline über Nanofokus, ein bis zwei zeilen.'
+    subtitle = 'ToDo: Tolle Headline über Nanofokus, ein bis zwei Zeilen.'
+    background = "bg/4@0,25x.jpg"
  
-
 
   # Intro section
   [params.intro]
@@ -52,65 +53,65 @@ theme = "hugo-elate-theme"
     url = "#"
     #button = "Get In Touch"
     icon = "fa fa-lightbulb-o"
-    img = "bg/1.jpg"
+    img = "bg/1@0,1x.jpg"
   [[params.intro.item]]
     title = "über die Produktion"
     description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
     url = "#"
     #button = "Click Me"
     icon = "fa fa-wrench"
-    img = "bg/3.jpg"
+    img = "bg/3@0,1x.jpg"
   [[params.intro.item]]
     title = "bis zum Verkauf"
     description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
     url = "#"
     #button = "Why us?"
     icon = "fa fa-shopping-basket"
-    img = "bg/2.jpg"
+    img = "bg/10@0,5x.jpg"
+
 
   # Work section
   [params.work]
     enable = true
     title = "Unsere Produkte"
-    description = "Toller Produkte Text, ToDo: Stimmen die Produkt zuordnungen?"
+    description = "ToDo: Toller Produkte Text"
     footertext = "Unsere Preisliste."
     [[params.work.row]]
-      img = "productes/1.jpg"
+      img = "productes/1@0,25x.jpg"
       alt = "Seidenschal"
       title = "Seidenschal - Crepe de Chine Seide"
       subtitle = "handgenäht - 39,50€"
     [[params.work.row]]
-      img = "productes/2.jpg"
+      img = "productes/2@0,25x.jpg"
       alt = "Einstecktuch"
       title = "Einstecktuch - Crepe de Chine Seide"
       subtitle = "handgenäht - 10,00€"
     [[params.work.row]]
-      img = "productes/3.jpg"
+      img = "productes/3@0,25x.jpg"
       alt = "Postkarten"
       title = "Postkarten"
       subtitle = "0,60€"
     [[params.work.row]]
-      img = "productes/buttons/4.jpg"
+      img = "productes/buttons/4@0,25x.jpg"
       alt = "Buttons"
       title = "Buttons (Handarbeit)"
       subtitle = "1,20€"
     [[params.work.row]]
-      img = "productes/4.jpg"
-      img2 = "productes/15.jpg"
+      img = "productes/4@0,25x.jpg"
+      img2 = "productes/15@0,25x.jpg"
       alt = "Krawatte"
       title = "Krawatte - Crepe de Chine Seide"
       subtitle = "handgenäht - 35,00€"
     [[params.work.row]]
-      img = "productes/cards/1.jpg"
-      img2 = "productes/cards/2.jpg"
-      img3 = "productes/cards/3.jpg"
-      img4 = "productes/cards/5.jpg"
-      img5 = "productes/cards/5.jpg"
-      img6 = "productes/cards/6.jpg"
+      img = "productes/cards/1@0,25x.jpg"
+      img2 = "productes/cards/2@0,25x.jpg"
+      img3 = "productes/cards/3@0,25x.jpg"
+      img4 = "productes/cards/5@0,25x.jpg"
+      img5 = "productes/cards/5@0,25x.jpg"
+      img6 = "productes/cards/6@0,25x.jpg"
       alt = "Klappkarten"
       title = "Klappkarten mit Einleger und Umschlag"
       subtitle = "1,80€"
-
 
 
   # Testimonials section
@@ -133,7 +134,6 @@ theme = "hugo-elate-theme"
       person = 'Chris Nash, Director <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>'
       img = "person3.jpg"
       alt = "Person3"
-
 
 
   # Services section
@@ -159,7 +159,6 @@ theme = "hugo-elate-theme"
       icon = "icon-monitor"
 
 
-
   # About section
   [params.about]
     enable = true
@@ -177,7 +176,6 @@ theme = "hugo-elate-theme"
     #    ["icon-facebook", "#"],
     #    ["icon-linkedin", "#"]
     #  ]
-
 
 
   # Counters section
@@ -215,7 +213,6 @@ theme = "hugo-elate-theme"
       speed = 5000
 
 
-
   # Contact section
   [params.contact]
     enable = true
@@ -223,7 +220,7 @@ theme = "hugo-elate-theme"
     title = "Kontaktiere uns"
     description = "Hast du eine Frage oder möchtest du uns etwas mitteilen? Dann nutze das Kontaktformular."
     details = [
-        ["fa fa-home", "Schülergenossenschaft des Lette-Vereins Berlin <br> Viktoria-Luise-Platz 6 <br> D-10777 Berlin"],
+        ["fa fa-home", "Nanofokus<br>Schülergenossenschaft des Lette-Vereins Berlin<br>Viktoria-Luise-Platz 6<br>D-10777 Berlin"],
         ["fa fa-user", "Ansprechpartnerin: Frau Herrmann"],
         #["fa fa-phone", "(030) 21994-0"],
         #["fa fa-envelope", "nanofokus@lette-verein.de"],

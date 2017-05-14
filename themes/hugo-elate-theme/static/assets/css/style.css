@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 	margin: 0 0 30px 0;
 }
-::-webkit-selection {
+/*::-webkit-selection {
 	color: #818892;
 	background: #f9f6f0;
 }
@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 ::selection {
 	color: #818892;
 	background: #f9f6f0;
-}
+}*/
 .edge--bottom {
 	position: relative;
 	z-index: 1;

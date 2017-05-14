@@ -1,14 +1,4 @@
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>{{ .Title }}</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="author" content="">
-
-<!-- 
-    //////////////////////////////////////////////////////
-
+    <!--//////////////////////////////////////////////////////
     FREE HTML5 TEMPLATE 
     DESIGNED & DEVELOPED by FREEHTML5.CO
         
@@ -17,60 +7,43 @@
     Twitter:        http://twitter.com/fh5co
     Facebook:       https://www.facebook.com/fh5co
 
-    HUGO TEMPLATE PORTED BY Pieter Saey
+    HUGO TEMPLATE PORTED BY Pieter Saey (https://github.com/saey55/hugo-elate-theme)
 
-    Website:        http://saey55.gitlab.io/pietercv
-    Email:          saeypieter@gmail.com
-    Twitter:        http://twitter.com/saey55
+    FORK EDITED BY Leo Winter (https://leowinterde.github.io/)
 
-    HUGO TEMPLATE PORTED FORK BY Leo Winter
-
-    Website:        http://saey55.gitlab.io/pietercv
-    Email:          saeypieter@gmail.com
-    Twitter:        http://twitter.com/saey55
-    
-
-    //////////////////////////////////////////////////////
-     -->
-
-<!-- Facebook and Twitter integration -->
-<meta property="og:title" content="" />
-<meta property="og:image" content="" />
-<meta property="og:url" content="" />
-<meta property="og:site_name" content="" />
-<meta property="og:description" content="" />
-<meta name="twitter:title" content="" />
-<meta name="twitter:image" content="" />
-<meta name="twitter:url" content="" />
-<meta name="twitter:card" content="" />
-
-<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-<link rel="shortcut icon" href="favicon.ico">
-
-<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
-
-<!-- Animate.css -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha256-j+P6EZJVrbXgwSR5Mx+eCS6FvP9Wq27MBRC/ogVriY0=" crossorigin="anonymous" />
-<!-- font awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
-<!-- Magnific Popup -->
-<link rel="stylesheet" href="assets/css/magnific-popup.css">
-<!-- Bootstrap -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-
-<link rel="stylesheet" href="assets/css/style.css">
-
-<!--
-       custom css files can be configured in config.toml:
-       [params]
-          custom_css = ["assets/css/foo.css", "assets/css/bar.css"]
--->
-{{ range .Site.Params.custom_css }}
-<link rel="stylesheet" href="{{ . }}"> {{ end }}
-
-<!-- Modernizr JS -->
-<script src="assets/js/modernizr-2.6.2.min.js"></script>
-<!-- FOR IE9 below -->
-<!--[if lt IE 9]>
-<script src="assets/js/respond.min.js"></script>
-<![endif]-->
+    //////////////////////////////////////////////////////-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ .Title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ with .Site.Params.description }}{{.}}{{ end }}">
+    <meta name="keywords" content="{{ with .Site.Params.keywords }}{{.}}{{ end }}">
+    <meta name="author" content="{{ with .Site.Params.author }}{{.}}{{ end }}">
+    <link rel="canonical" href="{{ .Permalink }}" />
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{ .Title }}" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:site_name" content="{{ .Title }}" />
+    {{ if .Description }}<meta name="og:description" content="{{ .Description }}">
+    <meta name="twitter:description" content="{{ .Description }}">{{ else }}<meta name="og:description" content="{{ .Params.description | .Site.Params.description }}">
+    <meta name="twitter:description" content="{{ .Params.description | .Site.Params.description }}">{{ end }}
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ .Title }}" />
+    <meta name="twitter:url" content="{{ .Permalink }}" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!--<link rel="shortcut icon" href="favicon.ico">-->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
+    <!--<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,700' rel='stylesheet' type='text/css'>-->
+    <!-- Animate.css --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha256-j+P6EZJVrbXgwSR5Mx+eCS6FvP9Wq27MBRC/ogVriY0=" crossorigin="anonymous" />
+    <!-- font awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <!-- Magnific Popup --><link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <!-- CSS --><link rel="stylesheet" href="assets/css/style.css">
+    {{ range .Site.Params.custom_css }}<link rel="stylesheet" href="{{ . }}">{{ end }}
+    <!-- Modernizr JS --><script src="assets/js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 -->
+    {{ "<!--[if lt IE 9]>" | safeHTML }}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    {{ "<![endif]-->" | safeHTML }}
